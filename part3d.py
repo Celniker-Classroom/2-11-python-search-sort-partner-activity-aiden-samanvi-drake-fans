@@ -1,0 +1,15 @@
+from random import randint #This line imports the randint function from the random module. The randint function generates a random integer between two specified values
+
+ranNums = [] #name your list and make sure it is empty!
+sum = 0
+
+# Generates a list of 5 or 10 random integers between 1 and 50 inclusive.
+for index in range(10): #for loop appends 5 numbers to your list, but make sure you name your variable
+    ranNums.append(randint(1,50)) #this adds a random number between 1-50 to the list
+
+for i in range(0, len(ranNums)):
+    sum += int(ranNums[i]) 
+
+
+print("Generated list:", ranNums) #print the list!
+print("The sum of the list is", sum)
